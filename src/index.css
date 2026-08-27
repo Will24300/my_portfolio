@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --color-term-bg: #0a0c10;
+  --color-term-surface: #11151c;
+  --color-term-card: #161b22;
+  --color-term-header: #1c2128;
+  --color-term-border: #30363d;
+  --color-term-text: #c9d1d9;
+  --color-term-muted: #8b949e;
+  --color-term-accent: #10b981;
+  --color-term-accentHover: #059669;
+  --color-term-amber: #f59e0b;
+  --color-term-cyan: #06b6d4;
+  --color-term-purple: #a855f7;
+  --color-term-red: #ef4444;
+  --color-term-yellow: #eab308;
+  --color-term-green: #22c55e;
+
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Consolas, Monaco, monospace;
+
+  --shadow-term-glow: 0 0 20px rgba(16, 185, 129, 0.25);
+  --shadow-term-window: 0 10px 30px -5px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+
+  --animate-blink: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+html {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  background-color: #0a0c10;
+  color: #c9d1d9;
+  color-scheme: dark;
+}
+
+/* Custom Scrollbar for Terminal aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+  border-left: 1px solid #1c2128;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #21262d;
+  border-radius: 4px;
+  border: 1px solid #30363d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Glowing border & text utilities */
+.text-glow {
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5), 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.border-glow {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* CRT subtle flicker line */
+.crt-scanlines {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.3)
+  );
+  background-size: 100% 4px;
+}
+
+/* ASCII Border & Code Block Helpers */
+.terminal-block {
+  background-color: #11151c;
+  border: 1px solid #30363d;
+  border-radius: 0.5rem;
+}
