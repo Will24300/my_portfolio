@@ -60,45 +60,7 @@ This compiles TypeScript and outputs production bundle assets to the `dist/` dir
 npm run preview
 ```
 
----
 
-## ✏️ How to Edit Your Personal Data
-
-All portfolio content is stored in clean TypeScript data files so you can customize your website **without modifying component code**:
-
-### 1. Update Personal Profile & Bio
-Open [`src/data/profile.ts`](src/data/profile.ts):
-- Update `name`, `roleTitles` (for typewriter), `pitch`, and `location`.
-- Edit `aboutMarkdown` array for your bio.
-- Edit `skillsData` array to customize your tech stack.
-- Edit `experienceData` array to update your career history.
-- Update `email` and `socials` array.
-
-### 2. Update Projects List
-Open [`src/data/projects.ts`](src/data/projects.ts):
-- Modify the `projectsData` array conforming to the `Project` interface defined in [`src/types/project.ts`](src/types/project.ts).
-- Update fields: `title`, `description`, `techStack`, `githubUrl`, `liveUrl`, `imageUrl`, `featured`, and `category`.
-
----
-
-## 🌐 Deployment (Vercel / Netlify)
-
-### Deploy to Vercel
-1. Push your repository to GitHub.
-2. Import your project into Vercel.
-3. Vercel automatically detects Vite:
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-4. Click **Deploy**.
-
-### Deploy to Netlify
-1. Connect your repository to Netlify.
-2. Configure build settings:
-   - **Build Command**: `npm run build`
-   - **Publish directory**: `dist`
-3. Click **Deploy Site**.
-
----
 
 ## 📄 License
 
