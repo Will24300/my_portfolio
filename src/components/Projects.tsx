@@ -11,8 +11,8 @@ export const Projects: React.FC = () => {
     { label: 'All Projects', value: 'all' },
     { label: 'Featured', value: 'featured' },
     { label: 'Full Stack', value: 'fullstack' },
+    { label: 'Frontend', value: 'frontend' },
     { label: 'CLI & Tools', value: 'cli' },
-    { label: 'Open Source', value: 'open-source' },
   ];
 
   const filteredProjects = projectsData.filter((project) => {

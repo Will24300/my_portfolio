@@ -122,48 +122,4 @@ export const skillsData: SkillCategory[] = [
   },
 ];
 
-/**
- * WORK EXPERIENCE & TIMELINE
- */
-export const experienceData: ExperienceItem[] = [
-  {
-    id: "exp-1",
-    year: "2023 - PRESENT",
-    role: "Senior Full-Stack Engineer",
-    company: "TechScale Solutions",
-    location: "Remote",
-    description: "Leading frontend architecture and micro-frontend integrations for high-traffic enterprise developer platform.",
-    highlights: [
-      "Engineered real-time dashboard monitoring system reducing API load by 40%",
-      "Mentored junior team members and spearheaded adoption of TypeScript strict mode",
-      "Built internal CLI tooling automating deployment validation checks",
-    ],
-    techStack: ["React", "TypeScript", "Node.js", "Docker", "Tailwind CSS"],
-  },
-  {
-    id: "exp-2",
-    year: "2021 - 2023",
-    role: "Full-Stack Developer",
-    company: "CloudPulse Systems",
-    location: "San Francisco, CA",
-    description: "Designed RESTful microservices and reactive user interfaces for infrastructure monitoring suite.",
-    highlights: [
-      "Implemented WebSockets streaming logs interface handling 10k events/second",
-      "Refactored legacy monolith into modular React components with 95% test coverage",
-    ],
-    techStack: ["TypeScript", "Next.js", "Express", "PostgreSQL", "Redis"],
-  },
-  {
-    id: "exp-3",
-    year: "2019 - 2021",
-    role: "Frontend Engineer",
-    company: "DevCraft Studio",
-    location: "Austin, TX",
-    description: "Built responsive client applications and open-source UI component libraries.",
-    highlights: [
-      "Developed custom terminal-styled design system adopted across 5 products",
-      "Optimized Web Vitals score from 65 to 98 across core marketing pages",
-    ],
-    techStack: ["React", "JavaScript", "CSS3", "Webpack", "Jest"],
-  },
-];
+
